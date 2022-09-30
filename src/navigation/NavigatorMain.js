@@ -22,19 +22,16 @@ export default function NavigatorMain() {
     return (
       <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login"          options={{headerShown: false}} component={LoginScreen} />
+        
         <Stack.Screen name="User"           options={{headerShown: false}} component={NavigationUser} />
+        <Stack.Screen name="Login"          options={{headerShown: false}} component={LoginScreen} />
         <Stack.Screen name="ChangePassword" options={{headerShown: false}} component={StackScreen} /> 
         <Stack.Screen name="Driver"         options={{headerShown: false}} component={NavigationDriver} />
-
-
 
         <Stack.Screen name="SchedulesScreenMain"      options={{headerShown: false}} component={SchedulesScreenMain} />
         <Stack.Screen name="SchedulesScreenInCourse"  options={{headerShown: false}} component={SchedulesScreenInCourse} />
         <Stack.Screen name="SchedulesScreenUpcoming"  options={{headerShown: false}} component={SchedulesScreenUpcoming} />
         <Stack.Screen name="Test"                     options={{headerShown: false}} component={Test} />
-
-
 
       </Stack.Navigator>
     </NavigationContainer>
